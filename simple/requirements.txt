@@ -1,0 +1,6 @@
+pandas==2.2.1
+scikit-learn==1.4.2
+tqdm==4.66.2
+imbalanced-learn==0.12.3
+mljar-supervised==1.1.9
+catboost==1.2.5
