@@ -4,7 +4,7 @@ from data.comment_meta import load_comment_ids_from_dataset
 from labels.data_labeler import DataLabeler
 from labels.server import run_server
 
-LABELED_DATASET_PATH = "../turzo2023towards/dataset/labeled_dataset.xlsx"
+LABELED_DATASET_PATH = "labels/turzo2023_dataset.xlsx"
 
 if __name__ == "__main__":
     used_ids = load_comment_ids_from_dataset(LABELED_DATASET_PATH)
