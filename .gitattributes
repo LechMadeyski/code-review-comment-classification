@@ -1,4 +1,2 @@
-turzo2023towards/** linguist-vendored
-proposed/labels/annotations/** linguist-generated
-proposed/dataset.xlsx linguist-generated
-proposed/reproduction/dataset.xlsx linguist-generated
+labels/annotations/** linguist-generated
+dataset.xlsx linguist-generated
