@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #222222;
+  color: #eeeeee;
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: #333333;
+  border-bottom: 1px solid #888888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar a {
+  color: #8888ff;
+  transition-duration: 0.25s;
+}
+
+.top-bar a:hover {
+  filter: brightness(1.5);
+}
+
+.editor {
+  flex: 1;
+}
+
+.comment-range {
+  background-color: #0000ff88;
+}
+
+.comment-content {
+  width: max-content;
+  background: #333333;
+  padding: 0.5rem;
+  border: 2px solid #8888ff;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 0.75rem;
+  user-select: text;
+}
+
+.bot-bar {
+  height: 4rem;
+  background-color: #333333;
+  border-top: 1px solid #888888;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.label-button {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #333388;
+  color: #ffffff;
+  border: 1px solid #8888ff;
+  font-size: 1rem;
+  font-weight: bold;
+  transition-duration: 0.25s;
+  cursor: pointer;
+}
+
+.label-button:not([disabled]):hover {
+  filter: brightness(1.5);
+}
+
+.label-button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.label-button[data-label="SKIP"] {
+  background-color: #883333;
+  border: 1px solid #ff8888;
+}
+
+.help-prompt {
+  display: inline-block;
+  margin-left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1rem;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #00000088;
+  border: 1px solid #ffffff;
+  cursor: help;
+}
+
+.help-prompt:hover {
+  background-color: #88888888;
+}
+
+.help-prompt aside {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 4rem;
+  left: 4rem;
+  right: 4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #333333;
+  border: 1px solid #888888;
+  box-shadow: 2px 4px 4px #00000088;
+  font-size: 1rem;
+  text-align: left;
+  line-height: initial;
+}
+
+.help-prompt:hover aside {
+  display: block;
+}
