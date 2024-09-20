@@ -60,7 +60,7 @@ flowchart LR
 General notes:
 
 - Python sources are formatted with [autopep8](https://pypi.org/project/autopep8).
-- Python dependencies are listed in `proposed/labels/requirements.txt`.
+- Python dependencies are listed in `labels/requirements.txt`.
 - HTML, CSS and JS sources are formatted with [Prettier](https://prettier.io).
-- JS dependencies are listed in `proposed/labels/client/js/lib.js`.
+- JS dependencies are listed in `labels/client/js/lib.js`.
 - To ensure minimal configuration overhead, the client code is created without using any tooling, bundlers, etc. (not even Node.js nor npm is required to run the project). This means that the project has to use pure JS, and specifically it can't use JSX. This can be achieved using [React&#39;s `createElement` API](https://react.dev/reference/react/createElement#creating-an-element-without-jsx). All client code should construct elements using the `h` function exported from `lib.js`.
