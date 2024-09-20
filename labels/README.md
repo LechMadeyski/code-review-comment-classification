@@ -25,7 +25,7 @@ python -m labels
    - Click any of the buttons when you are sure that the browsed comment belongs to the category.
    - Click the SKIP button if you are unsure about the category.
 3. Press CTRL+C (or close the program using any other means) to end the labeling process.
-4. Your labels should end up in the `proposed/labels/annotations` folder, validate them and commit to the VCS.
+4. Your labels should end up in the `labels/annotations` folder, validate them and commit to the VCS.
 
 ## Contributor guide
 
